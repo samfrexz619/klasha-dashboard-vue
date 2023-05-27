@@ -12,9 +12,11 @@
       </main>
     </section>
   </main>
+  <MobileNav  />
 </template>
 
 <script setup lang="ts">
+import MobileNav from '../MobileNav.vue';
 import Sidenav from '../Sidenav.vue';
 import TopNav from '../TopNav.vue';
 

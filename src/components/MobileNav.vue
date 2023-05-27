@@ -1,6 +1,6 @@
 <template>
-  <aside class="bg-[#FFFBF7] fixed lg:inset-y-0 lg:fixed lg:w-64 lg:flex lg:flex-col hidden">
-    <nav class="w-[74%] mx-auto overflow-y-auto reset">
+  <aside class="bg-modal lg:hidden fixed top-0 w-full bottom-0 flex z-50">
+    <nav class="w-64 relative z-50 left-0 overflow-y-auto side__nav reset py-2 px-9 bg-[#FFFBF7]">
       <ul>
         <li class="py-10">
           <router-link :to="{name: 'dashboard'}">
@@ -42,20 +42,9 @@ import LinkIcons from './LinkIcons.vue';
 
 
 const [ main_page ] = navItems 
+
 </script>
 
-<style  lang="scss">
-.reset {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-.router-link-active {
-  color: #EF2C5A;
-}
+<style scoped>
 
 </style>
